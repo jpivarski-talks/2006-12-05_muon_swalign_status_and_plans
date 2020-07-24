@@ -1,0 +1,42 @@
+Hi Jim,
+ 
+Nice slides, but I think the main outline is way too academic. Remember, people
+want to know what we have done and when we will be able to complete the project.
+We should give them an impression that this topic is covered and we will produce
+the result soon and that we have done quite a bit already to ensure that this will
+happen. Number of muons should be more of a side issue and should not take more
+than a slide or so. The general discussion really belongs more to Duncan's talk.
+It is good that you think in terms of the big picture, but we still need to deliver our
+piece and people want to know if they can rely on us or not.
+ 
+I would do the following order:
+ 
+1. Muon alignment w/ tracks versus hardware (you have it already and it is good)
+2. How muon alignment with tracks is done, history of what's been already there
+in CMSSW (if any and whether it was working or not).
+3. Describe deficiencies of the old methods and need for generalized approach.
+Mention that we were thinking first about separating muon stuff from tracks, but
+the alignment group convinced us to do it their way. Note that from practical point
+of view it doe not matter as we still get all the same functionality. Explain that you
+were able to calculate residuals before, but the method for doing that must be
+much more generic, which is really a C++ and software architecture issue.
+4. Show grand scheme of the new infrastructure and explain how I works, maybe
+first in simple terms, then show a slide with the technical information (your usual
+diagram).
+5. Remind people again as to our final goal and tell where we are now and what
+remains to be done and what the plan is time-wise. We plan to start by writing
+and debugging the algorithm in some simple manner, than do a full blown exercise
+with deviated geometry; then same with e.g. Z->mumu events and other options
+like W's (and maybe try cosmic with tracks very close to beamline to remove
+effects of non-pointing back to vertex on tracking and muon reco). And that will
+be pretty much it.
+6. Then you can give some extra information on how many events you need
+and how much time that translates to etc.
+ 
+By the way, I am not sure I understand all what you say about the calculation
+of the number of events you need (e.g. I don't know what those 8mm stand for).
+I think I understand what general idea you are pursuing, but the details are not
+easy to figure out from your slides.
+ 
+Regards,
+Alexei
